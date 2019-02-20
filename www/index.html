@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+  <title>Stellar by HTML5 UP</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+      {{#section headers multiple=true label="Mega titre"}}
+      <span class="logo"><img src="images/logo.svg" alt="" /></span>
+      <h1>{{title}}</h1>
+      <p>{{body type=html}}<br />
+        <!-- built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>-->.</p>
+      {{/section}}
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+      <ul>
+        <li><a href="#intro" class="active">Introduction</a></li>
+        <li><a href="#first">First Section</a></li>
+        <li><a href="#second">Second Section</a></li>
+        <li><a href="#cta">Get Started</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- Introduction -->
+      {{#section about label="Introduction pour la page(A propos)" sortable=true}}
+      <section id="intro" class="main">
+        <div class="spotlight">
+          <div class="content">
+            <header class="major">
+              <h2>{{name}}</h2>
+            </header>
+            <p>{{body type=html}}.</p>
+            <ul class="actions">
+              <li><a href="{{_permalink}}" class="button">{{name}}</a></li>
+            </ul>
+          </div>
+          <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+        </div>
+      </section>
+      {{/section}}
+
+      <!-- First Section -->
+      {{#section services multiple=true}}
+      <section id="first" class="main special">
+        <header class="major">
+          <h2>{{title}}</h2>
+        </header>
+
+        <ul class="features">
+          {{#section services1 multiple=true}}
+          <li>
+            <span class="{{class}}"></span>
+            <h3>{{headline}}</h3>
+            <p>{{intro type=html required=true}}</p>
+          </li>
+          <!-- <li>
+            <span class="icon major style3 fa-copy"></span>
+            <h3>Amed sed feugiat</h3>
+            <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+          </li>-->
+          {{/section}}
+        </ul>
+        <footer class="major">
+          <ul class="actions special">
+            <li><a href="generic.html" class="button">Learn More</a></li>
+          </ul>
+        </footer>
+      </section>
+      {{/section}}
+      <!-- Second Section -->
+      {{#section portfolio multiple=true}}
+      <section id="second" class="main special">
+        <header class="major">
+          <h2>{{headline}}</h2>
+          <p>{{intro type=html required=true}}</p>
+        </header>
+        <ul class="statistics">
+          {{#section statistics multiple=true}}
+          <li class="style1">
+            <span class="{{class}}"></span>
+            <strong>{{max}}</strong> {{name}}
+          </li>
+          <!-- <li class="style2">
+            <span class="icon fa-folder-open-o"></span>
+            <strong>8,192</strong> Magna
+          </li>-->
+          {{/section}}
+        </ul>
+        <p class="content">{{body type=html required=true}}</p>
+        <footer class="major">
+          <ul class="actions special">
+            <li><a href="generic.html" class="button">Learn More</a></li>
+          </ul>
+        </footer>
+      </section>
+      {{/section}}
+
+      <!-- Get Started -->
+      {{#section contact}}
+      <section id="cta" class="main special">
+        <header class="major">
+          <h2>{{headline}}</h2>
+          <p>{{intro type=html required=false}}</p>
+        </header>
+        <form method="post" action="#">
+          <div class="row gtr-uniform">
+            <div class="col-6 col-12-xsmall">
+              <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nom et Prénom" />
+            </div>
+            <div class="col-6 col-12-xsmall">
+              <input type="email" name="demo-email" id="demo-email" value="" placeholder="Adresse mail" />
+            </div>
+            <div class="col-12">
+              <textarea name="demo-message" id="demo-message" placeholder="Parlez un peu de vous" rows="6"></textarea>
+            </div>
+            <div class="col-12">
+              <ul class="actions">
+                <li><input type="submit" value="Envoyez" class="primary" /></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </section>
+      {{/section}}
+
+    </div>
+
+    <!-- Footer -->
+
+    {{> footer}}
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
